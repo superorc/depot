@@ -1,9 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
-  price: 9.99
+ruby:
+  title: Programming ruby 1.9
+  description:
+    some descripiton of book here
+  price: 20.50
 
 two:
   title: MyString
