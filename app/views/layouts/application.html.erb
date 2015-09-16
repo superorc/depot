@@ -8,7 +8,25 @@
 </head>
 <body class='<%= controller.controller_name %>'>
 
-<%= yield %>
+  <div id='banner'>
+    <%= @page_title || "Sex shop XXX" %>
+  </div>
+
+  <div id='colomns'>
+    <div id="side">
+      <ul>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> FAQ </a></li>
+        <li><a href="#"> News </a></li>
+        <li><a href="#"> Contacts </a></li>
+        <li> <%= link_to 'New product', new_product_path %> </li>
+        <li> <%= link_to 'Catalog', store_path %> </li>
+      </ul>
+    </div>
+
+  <div id="main">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
