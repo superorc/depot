@@ -26,13 +26,19 @@
         <li><a href="#"> FAQ </a></li>
         <li><a href="#"> News </a></li>
         <li><a href="#"> Contacts </a></li>
-        <li> <%= link_to 'New product', new_product_path %> </li>
-        <li> <%= link_to 'Catalog', store_path %> </li>
       </ul>
 
+      <% if session[:user_id] %>
 
+        <ul>
+          <li> <%= link_to 'Ordes', orders_path %> </li>
+          <li> <%= link_to 'Products', products_path %> </li>
+          <li> <%= link_to 'Users', users_path %> </li>
+        </ul>
 
+        <%= button_to 'Logout', logout_path, method: :delete %>
 
+      <% end %>
 
     </div>
 
