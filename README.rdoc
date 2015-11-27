@@ -1,2 +1,1 @@
-practice with Rails
-book - Agile Web Development with Rails 4
+deploying to production env
