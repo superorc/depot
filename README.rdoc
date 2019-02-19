@@ -1,2 +1,9 @@
 practice with Rails
 book - Agile Web Development with Rails 4
+
+To build docker image:
+
+```shell
+docker build -f Dockerfile_base -t depot:tst .
+docker build -t depot_app:tst .
+```
