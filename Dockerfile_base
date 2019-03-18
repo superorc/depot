@@ -1,0 +1,3 @@
+FROM debian:latest
+
+RUN apt update && apt install -y git ruby ruby-dev gcc zlib1g-dev make libsqlite3-dev build-essential g++
